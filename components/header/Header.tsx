@@ -10,7 +10,7 @@ const Header = () => {
           <NavBar />
         </div>
         <div className='text-center pt-10'>
-          <h1 id='head' className='text-3xl md:text-5xl font-bold text-[#f6f6d6] font-300  my-5'>
+          <h1 id='head' className='text-3xl md:text-5xl font-bold text-[#fef6e2] font-300  my-5'>
             Assessoria Jurídica com Paixão e Conhecimento
           </h1>
         </div>

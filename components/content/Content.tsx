@@ -1,3 +1,4 @@
+import ModalForm from '../modalForm/ModalForm';
 import ContactSection from './ContactSection';
 import ImageSection from './ImageSection';
 import InfoListSection from './InfoListSection';
@@ -10,6 +11,7 @@ function Content() {
       <LegalJourneySection />
       <InfoListSection />
       <ContactSection />
+      <ModalForm />
     </main>
   );
 }

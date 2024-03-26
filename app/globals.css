@@ -8,7 +8,7 @@
 }
 
 body {
-  @apply bg-[#F6F6D6];
+  @apply bg-[#fef6e2];
   @apply bg-[url('/images/bg.svg')];
   font-family: 'Open Sans', sans-serif;
   font-size: larger;
@@ -21,4 +21,8 @@ body {
 h1,
 h2 {
   font-family: Merriweather, serif;
+}
+
+footer {
+  background-color: #112d3b;
 }

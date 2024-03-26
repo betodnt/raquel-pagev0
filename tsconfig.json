@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/header/dropdown.tsx"
+    "components/header/dropdown.tsx",
+    "components/modalForm/ModalContent.jsx"
   ],
   "exclude": ["node_modules"]
 }
