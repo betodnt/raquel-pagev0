@@ -1,71 +1,56 @@
-'use client';
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 
-import { useState, useEffect } from 'react';
-import ModalContent from './ModalContent';
-
-const ModalForm = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-    setName('');
-    setEmail('');
-    setPhone('');
-    setMessage('');
-  };
-
-  useEffect(() => {
-    return () => {
-      setShowModal(false);
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
-    };
-  }, []);
-
+export function ModalForm() {
   return (
-    <div className='text-center'>
-      <button
-        onClick={handleOpenModal}
-        className='bg-[#112d3b] hover:bg-[#3d5c66] text-white font-bold rounded-xl mb-8 py-2 px-4 mt-4 inline-block w-fit h-fit'
-      >
-        Entrar em contato
-      </button>
-
-      {showModal && (
-        <div className='fixed z-10 inset-0 overflow-y-auto'>
-          <div className='flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0'>
-            <div className='fixed inset-0 transition-opacity' aria-hidden='true'>
-              <div className='absolute inset-0 bg-gray-500 opacity-75'></div>
+    <Dialog defaultOpen>
+      <DialogTrigger asChild>
+        <Button className="bg-[#ffc746]" variant="outline">
+          Entrar em contato
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[500px]">
+        <DialogHeader>
+          <DialogTitle>Contato</DialogTitle>
+          <DialogDescription>Entrarei em contato o mais rápido possível</DialogDescription>
+        </DialogHeader>
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="name">Nome</Label>
+              <Input id="name" placeholder="Digite seu nome" />
             </div>
-            <span className='hidden sm:inline-block sm:align-middle sm:h-screen' aria-hidden='true'>
-              
-            </span>
-            <ModalContent
-              name={name}
-              setName={setName}
-              email={email}
-              setEmail={setEmail}
-              phone={phone}
-              setPhone={setPhone}
-              message={message}
-              setMessage={setMessage}
-              handleCloseModal={handleCloseModal}
-            />
+            <div className="space-y-2">
+              <Label htmlFor="email">Email</Label>
+              <Input id="email" type="email" placeholder="digite seu email" />
+            </div>
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="phone">Telefone</Label>
+            <Input id="phone" type="tel" placeholder="digite seu número com DDD" />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="message">Mensagem</Label>
+            <Textarea id="message" placeholder="Digite sua mensagem" className="min-h-[150px]" />
           </div>
         </div>
-      )}
-    </div>
+        <DialogFooter>
+          <Button className="bg-[#ffc746]" type="submit">
+            Enviar
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
-};
-
-export default ModalForm;
+}
