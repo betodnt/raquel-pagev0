@@ -36,9 +36,9 @@ const ModalForm = () => {
     <div className='text-center'>
       <button
         onClick={handleOpenModal}
-        className='bg-[#112d3b] hover:bg-[#3d5c66] text-white font-bold rounded mb-8 py-2 px-4 mt-4 inline-block w-fit h-fit'
+        className='bg-[#112d3b] hover:bg-[#3d5c66] text-white font-bold rounded-xl mb-8 py-2 px-4 mt-4 inline-block w-fit h-fit'
       >
-        Me envie uma mensagem
+        Entrar em contato
       </button>
 
       {showModal && (
@@ -48,7 +48,7 @@ const ModalForm = () => {
               <div className='absolute inset-0 bg-gray-500 opacity-75'></div>
             </div>
             <span className='hidden sm:inline-block sm:align-middle sm:h-screen' aria-hidden='true'>
-              ​
+              
             </span>
             <ModalContent
               name={name}

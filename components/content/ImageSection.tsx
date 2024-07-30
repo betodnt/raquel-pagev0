@@ -10,9 +10,9 @@ function ImageSection() {
         height={1000}
         className='rounded-full my-7 w-32 h-32 md:mr-10 md:mb-0'
       />
-      <p className='text-center md:text-left md:mt-11'>
+      <p className='text-center text-2xl md:text-left md:mt-11 md:text-xl'>
         Olá! Seja bem-vindo(a) <br />
-        Eu sou Raquel Rodrigues Masson, uma recém-formada em direito apaixonada por justiça e
+        Me chamo Raquel Rodrigues Masson, uma recém-formada em direito apaixonada por justiça e
         comprometida em ajudar você a garantir seus direitos.
       </p>
     </div>

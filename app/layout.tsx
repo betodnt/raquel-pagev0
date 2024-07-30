@@ -3,13 +3,14 @@ import {Roboto, Playfair} from 'next/font/google'
 import './globals.css';
 
 const playfair = Playfair({
+  weight: ['300','400','700'],
   subsets: ['latin'],
   variable: '--font-playfair',
   display: 'swap'
 })
 
 const roboto = Roboto({
-  weight: ['300','400'],
+  weight: ['300','400','700'],
   style: ['italic','normal'],
   subsets: ['latin'],
   variable: '--font-roboto',

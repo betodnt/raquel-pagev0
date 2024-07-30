@@ -23,7 +23,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      inkscape:zoom="8.5368069"
-     inkscape:cx="21.553726"
+     inkscape:cx="21.436587"
      inkscape:cy="5.3884316"
      inkscape:window-width="960"
      inkscape:window-height="1016"
@@ -59,7 +59,7 @@
      transform="matrix(0.11364076,0,0,0.11364076,-1.7101163,-7.5782918)">
     <g
        id="g3"
-       style="opacity:0.55">
+       style="opacity:0.5">
       <path
          id="rect15-6"
          style="fill:#112d3b;fill-opacity:0.0573711;stroke:none;stroke-width:0.253893;stroke-linejoin:round;stroke-miterlimit:34;paint-order:stroke fill markers"
@@ -94,9 +94,9 @@
            style="font-size:74.6667px;font-family:Merriweather;-inkscape-font-specification:Merriweather;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#112d3b;fill-opacity:0.0573711;stroke-width:0.755906;stroke-linejoin:round;stroke-miterlimit:34;paint-order:stroke fill markers"><tspan
              x="372.92773"
              y="231.50784"
-             id="tspan4"><tspan
+             id="tspan3"><tspan
                style="font-weight:900;-inkscape-font-specification:'Merriweather Heavy'"
-               id="tspan1">R.R.M</tspan></tspan></text>
+               id="tspan2">R.R.M</tspan></tspan></text>
       </g>
     </g>
   </g>

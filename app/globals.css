@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply bg-[#fdfdf3];
+  @apply bg-[#ededed];
   @apply bg-[url('/images/bg.svg')];
   font-family: var(--font-roboto);
   color: #2c2c2c;
