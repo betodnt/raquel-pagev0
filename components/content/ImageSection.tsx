@@ -8,7 +8,7 @@ function ImageSection() {
         alt='Raquel Rodrigues Masson'
         width={1000}
         height={1000}
-        className='rounded-full my-9 w-32 h-32 md:mr-10 md:mb-0'
+        className='rounded-full my-7 w-32 h-32 md:mr-10 md:mb-0'
       />
       <p className='text-center md:text-left md:mt-11'>
         Olá! Seja bem-vindo(a) <br />

@@ -1,6 +1,20 @@
 import type { Metadata } from 'next';
-
+import {Roboto, Playfair} from 'next/font/google'
 import './globals.css';
+
+const playfair = Playfair({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap'
+})
+
+const roboto = Roboto({
+  weight: ['300','400'],
+  style: ['italic','normal'],
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: 'Raquel Rodrigues Masson',
@@ -19,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='pt-BR'>
+    <html lang='pt-BR' className={`${playfair.variable} ${roboto.variable}`}>
       <body>{children}</body>
     </html>
   );

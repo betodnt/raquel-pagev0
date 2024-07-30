@@ -2,25 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  @apply bg-[#fef6e2];
+  @apply bg-[#fdfdf3];
   @apply bg-[url('/images/bg.svg')];
-  font-family: 'Open Sans', sans-serif;
-  font-size: larger;
-}
-
-#head {
-  text-shadow: black 0.1em 0.1em 0.2em;
+  font-family: var(--font-roboto);
+  color: #2c2c2c;
 }
 
 h1,
 h2 {
-  font-family: Merriweather, serif;
+  font-family: var(--font-playfair);
+  color: #191919
 }
 
 footer {
