@@ -14,7 +14,7 @@ import { Textarea } from '@/components/ui/textarea';
 
 export function ModalForm() {
   return (
-    <Dialog defaultOpen>
+    <Dialog>
       <DialogTrigger asChild>
         <Button className="bg-[#ffc746]" variant="outline">
           Entrar em contato
