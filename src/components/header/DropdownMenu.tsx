@@ -1,16 +1,20 @@
-'use client'
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { ModalForm } from '@/app/pages/modalForm/page'
-import { Spin as Hamburger } from 'hamburger-react'
-import { IoLogoWhatsapp, IoLogoInstagram, IoMailOutline } from 'react-icons/io5'
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import { ModalForm } from "@/app/pages/modalForm/page";
+import { Spin as Hamburger } from "hamburger-react";
+import {
+  IoLogoWhatsapp,
+  IoLogoInstagram,
+  IoMailOutline,
+} from "react-icons/io5";
 
 export const DropdownMenu: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggle = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div className="relative sm:hidden">
@@ -80,5 +84,5 @@ export const DropdownMenu: React.FC = () => {
         </>
       )}
     </div>
-  )
-}
+  );
+};

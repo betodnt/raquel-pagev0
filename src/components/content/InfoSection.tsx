@@ -18,7 +18,7 @@ function InfoSection() {
         </li>
       </ul>
     </section>
-  )
+  );
 }
 
-export default InfoSection
+export default InfoSection;

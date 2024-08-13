@@ -1,6 +1,6 @@
-import Content from '@/components/content/Content'
-import { Header } from '@/components/header/Header'
-import Footer from '@/components/footer/Footer'
+import Content from "@/components/content/Content";
+import { Header } from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -9,5 +9,5 @@ export default function Home() {
       <Content />
       <Footer />
     </>
-  )
+  );
 }
