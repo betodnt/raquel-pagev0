@@ -26,7 +26,7 @@ export function NavBar() {
           />
         </Link>
         <Link
-          href="https://www.instagram.com/raquelrgsmasson"
+          href="mailto:contato@raquelrgsmasson.com.br?subject=Tenho uma dúvida&body=Corpo do e-mail"
           target="_blank"
           passHref
         >

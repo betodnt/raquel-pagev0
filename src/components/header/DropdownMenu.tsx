@@ -1,5 +1,7 @@
+'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
+import { ModalForm } from '@/app/pages/modalForm/page'
 import { Spin as Hamburger } from 'hamburger-react'
 import { IoLogoWhatsapp, IoLogoInstagram, IoMailOutline } from 'react-icons/io5'
 
@@ -11,7 +13,7 @@ export const DropdownMenu: React.FC = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative sm:hidden">
       <Hamburger
         size={48}
         rounded
@@ -23,7 +25,7 @@ export const DropdownMenu: React.FC = () => {
       {isMenuOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-10"
+            className="fixed inset-0 bg-black/80 z-10"
             onClick={toggle}
           ></div>
           <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white shadow-lg flex flex-col gap-2 p-4 justify-center items-center z-20">
@@ -69,6 +71,9 @@ export const DropdownMenu: React.FC = () => {
                     contato@raquelrgsmasson.com.br
                   </span>
                 </Link>
+              </li>
+              <li className="mt-8 mb-2 text-center">
+                <ModalForm />
               </li>
             </ul>
           </div>
