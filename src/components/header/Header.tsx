@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { NavBar } from "./Navbar";
+import Image from 'next/image'
+import { NavBar } from './Navbar'
 
 export function Header() {
   return (
@@ -17,5 +17,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }

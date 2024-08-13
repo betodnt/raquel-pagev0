@@ -1,11 +1,7 @@
-"use client";
-import {
-  IoLogoWhatsapp,
-  IoLogoInstagram,
-  IoMailOutline,
-} from "react-icons/io5";
-import Link from "next/link";
-import { DropdownMenu } from "@/components/header/DropdownMenu";
+'use client'
+import { IoLogoWhatsapp, IoLogoInstagram, IoMailOutline } from 'react-icons/io5'
+import Link from 'next/link'
+import { DropdownMenu } from '@/components/header/DropdownMenu'
 
 export function NavBar() {
   return (
@@ -43,5 +39,5 @@ export function NavBar() {
 
       <DropdownMenu />
     </nav>
-  );
+  )
 }

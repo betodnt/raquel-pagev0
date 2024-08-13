@@ -1,5 +1,5 @@
-import { IoMailOutline, IoLogoGithub } from "react-icons/io5";
-import Link from "next/link";
+import { IoMailOutline, IoLogoGithub } from 'react-icons/io5'
+import Link from 'next/link'
 // import { Separator } from '@/components/ui/separator'
 
 export default function Component() {
@@ -47,5 +47,5 @@ export default function Component() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

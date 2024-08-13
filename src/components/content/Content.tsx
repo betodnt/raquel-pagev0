@@ -1,8 +1,8 @@
-import { ModalForm } from "../../app/pages/modalForm/page";
-import ContactSection from "./ContactSection";
-import ImageSection from "./ImageSection";
-import InfoSection from "./InfoSection";
-import LegalJourneySection from "./LegalJourneySection";
+import { ModalForm } from '../../app/pages/modalForm/page'
+import ContactSection from './ContactSection'
+import ImageSection from './ImageSection'
+import InfoSection from './InfoSection'
+import LegalJourneySection from './LegalJourneySection'
 
 function Content() {
   return (
@@ -16,7 +16,7 @@ function Content() {
       <ContactSection />
       <ModalForm />
     </main>
-  );
+  )
 }
 
-export default Content;
+export default Content

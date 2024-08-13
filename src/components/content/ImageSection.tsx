@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 function ImageSection() {
   return (
@@ -17,7 +17,7 @@ function ImageSection() {
         direitos.
       </p>
     </div>
-  );
+  )
 }
 
-export default ImageSection;
+export default ImageSection
