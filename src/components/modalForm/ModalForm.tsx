@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import { useForm } from "react-hook-form";
+import { useForm } from 'react-hook-form'
 import {
   Dialog,
   DialogTrigger,
@@ -9,17 +9,17 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-} from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+} from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import { Label } from '@/components/ui/label'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
 
 interface ModalFormProps {
-  nome: string;
-  telefone: string;
-  email: string;
-  mensagem: string;
+  nome: string
+  telefone: string
+  email: string
+  mensagem: string
 }
 
 export const ModalForm: React.FC = () => {
@@ -27,29 +27,29 @@ export const ModalForm: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<ModalFormProps>();
+  } = useForm<ModalFormProps>()
 
   const onSubmit = async (data: ModalFormProps) => {
-    console.log(data);
+    console.log(data)
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
+      const response = await fetch('/api/contact', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
-      });
+      })
 
       if (response.status === 200) {
-        alert("Mensagem enviada com sucesso!");
+        alert('Mensagem enviada com sucesso!')
       } else {
-        alert("Erro ao enviar mensagem.");
+        alert('Erro ao enviar mensagem.')
       }
     } catch (error) {
-      console.error(error);
-      alert("Erro ao enviar mensagem.");
+      console.error(error)
+      alert('Erro ao enviar mensagem.')
     }
-  };
+  }
 
   return (
     <Dialog>
@@ -73,7 +73,7 @@ export const ModalForm: React.FC = () => {
                 <Input
                   id="nome"
                   placeholder="Digite seu nome"
-                  {...register("nome", { required: true })}
+                  {...register('nome', { required: true })}
                 />
                 {errors.nome && <span>Nome é obrigatório</span>}
               </div>
@@ -83,7 +83,7 @@ export const ModalForm: React.FC = () => {
                   id="email"
                   type="email"
                   placeholder="Digite seu email"
-                  {...register("email", { required: true })}
+                  {...register('email', { required: true })}
                 />
                 {errors.email && <span>Email é obrigatório</span>}
               </div>
@@ -94,7 +94,7 @@ export const ModalForm: React.FC = () => {
                 id="telefone"
                 type="tel"
                 placeholder="Digite seu número com DDD"
-                {...register("telefone")}
+                {...register('telefone')}
               />
             </div>
             <div className="space-y-2">
@@ -103,7 +103,7 @@ export const ModalForm: React.FC = () => {
                 id="mensagem"
                 placeholder="Digite sua mensagem"
                 className="min-h-[150px]"
-                {...register("mensagem", { required: true })}
+                {...register('mensagem', { required: true })}
               />
               {errors.mensagem && <span>Mensagem é obrigatória</span>}
             </div>
@@ -116,5 +116,5 @@ export const ModalForm: React.FC = () => {
         </form>
       </DialogContent>
     </Dialog>
-  );
-};
+  )
+}

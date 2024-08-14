@@ -1,4 +1,4 @@
-import { ModalForm } from '../../app/pages/modalForm/page'
+import { ModalForm } from '../modalForm/ModalForm'
 import ContactSection from './ContactSection'
 import ImageSection from './ImageSection'
 import InfoSection from './InfoSection'

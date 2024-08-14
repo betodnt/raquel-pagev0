@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { ModalForm } from "@/app/pages/modalForm/page";
+import { ModalForm } from "@/components/modalForm/ModalForm";
 import { Spin as Hamburger } from "hamburger-react";
 import {
   IoLogoWhatsapp,
