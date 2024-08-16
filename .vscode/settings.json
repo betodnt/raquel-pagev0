@@ -1,3 +1,4 @@
 {
-    "npm.exclude": ""
+  "npm.exclude": "",
+  "cSpell.language": "en,pt-BR"
 }

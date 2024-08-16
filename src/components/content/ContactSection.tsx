@@ -1,9 +1,5 @@
-import Link from "next/link";
-import {
-  IoLogoWhatsapp,
-  IoLogoInstagram,
-  IoMailOutline,
-} from "react-icons/io5";
+import Link from 'next/link'
+import { IoLogoWhatsapp, IoLogoInstagram, IoMailOutline } from 'react-icons/io5'
 
 function ContactSection() {
   return (
@@ -29,7 +25,7 @@ function ContactSection() {
           >
             <IoLogoWhatsapp size={32} className="text-[#112d3b]" />
             <span className="ml-1 md:ml-2">
-              {" "}
+              {' '}
               <span className="hidden md:inline">WhatsApp: </span>(18)
               99151-8387
             </span>
@@ -66,7 +62,7 @@ function ContactSection() {
         </li>
       </ul>
     </section>
-  );
+  )
 }
 
-export default ContactSection;
+export default ContactSection

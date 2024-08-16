@@ -1,31 +1,29 @@
-"use client";
-import React, { useState } from "react";
-import Link from "next/link";
-import { ModalForm } from "@/components/modalForm/ModalForm";
-import { Spin as Hamburger } from "hamburger-react";
-import {
-  IoLogoWhatsapp,
-  IoLogoInstagram,
-  IoMailOutline,
-} from "react-icons/io5";
+'use client'
+import { useState } from 'react'
+import Link from 'next/link'
+import { ModalForm } from '@/components/modalForm/ModalForm'
+import { Spin as Hamburger } from 'hamburger-react'
+import { IoLogoWhatsapp, IoLogoInstagram, IoMailOutline } from 'react-icons/io5'
 
 export const DropdownMenu: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   return (
-    <div className="relative sm:hidden">
-      <Hamburger
-        size={48}
-        rounded
-        hideOutline={false}
-        color="#daa520"
-        toggled={isMenuOpen}
-        toggle={toggle}
-      />
+    <div className="relative sm:hidden ">
+      <div className=" z-30">
+        <Hamburger
+          size={48}
+          rounded
+          hideOutline={false}
+          color="#daa520"
+          toggled={isMenuOpen}
+          toggle={toggle}
+        />
+      </div>
       {isMenuOpen && (
         <>
           <div
@@ -84,5 +82,5 @@ export const DropdownMenu: React.FC = () => {
         </>
       )}
     </div>
-  );
-};
+  )
+}

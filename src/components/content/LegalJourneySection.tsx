@@ -9,7 +9,7 @@ function LegalJourneySection() {
           <p className="text-2xl md:text-lg">
             <span className="font-bold text-2xl md:text-lg">
               Formação Sólida:
-            </span>{" "}
+            </span>{' '}
             No final de 2023, concluí minha graduação em direito, obtendo o
             título de bacharel. Essa jornada acadêmica me proporcionou uma base
             sólida e me preparou para enfrentar os desafios do campo jurídico.
@@ -68,7 +68,7 @@ function LegalJourneySection() {
         </li>
       </ul>
     </section>
-  );
+  )
 }
 
-export default LegalJourneySection;
+export default LegalJourneySection

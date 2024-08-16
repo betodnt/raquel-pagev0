@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Component() {
   return (
-    <footer className="bg-muted p-6 md:py-12 w-full mt-10">
+    <footer className="bg-muted p-6 md:py-8 w-full mt-10">
       <div className="container max-w-7xl grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm">
         <div className="grid gap-1">
           <h3 className="font-semibold">Contato</h3>
