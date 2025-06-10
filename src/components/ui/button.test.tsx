@@ -5,7 +5,9 @@ import { Button } from './button' // Adjust path as necessary
 describe('Button Component', () => {
   it('renders with children', () => {
     render(<Button>Click Me</Button>)
-    expect(screen.getByRole('button', { name: /Click Me/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /Click Me/i }),
+    ).toBeInTheDocument()
   })
 
   it('applies variant classes', () => {
@@ -18,6 +20,8 @@ describe('Button Component', () => {
 
   it('is disabled when disabled prop is true', () => {
     render(<Button disabled>Disabled Button</Button>)
-    expect(screen.getByRole('button', { name: /Disabled Button/i })).toBeDisabled()
+    expect(
+      screen.getByRole('button', { name: /Disabled Button/i }),
+    ).toBeDisabled()
   })
 })
