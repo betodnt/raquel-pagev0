@@ -9,6 +9,7 @@ function ImageSection() {
         width={1000}
         height={1000}
         className="rounded-full my-7 w-32 h-32 md:mr-10 md:mb-0"
+        priority
       />
       <p className="text-center text-2xl md:text-left md:mt-11 md:text-xl">
         Olá! Seja bem-vindo(a) <br />

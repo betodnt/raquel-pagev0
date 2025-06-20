@@ -12,6 +12,7 @@ export function Header() {
             width={100}
             height={100}
             className="p-0"
+            priority
           />
           <NavBar />
         </div>
