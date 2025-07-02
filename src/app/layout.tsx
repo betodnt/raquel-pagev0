@@ -19,7 +19,11 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'Raquel Rodrigues Masson',
-  description: 'Serviço de Assessoria Jurídica',
+  description: 'Serviço de Assessoria Jurídica',
+  keywords:
+    'advogada, assessoria jurídica, direito, Raquel Rodrigues Masson, advocacia, serviços jurídicos',
+  authors: [{ name: 'Raquel Rodrigues Masson' }],
+  robots: 'index, follow',
   icons: {
     icon: ['/favicon.ico'],
     apple: ['/apple-touch-icon.png?v=4'],

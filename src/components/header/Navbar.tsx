@@ -4,10 +4,26 @@ import Link from 'next/link'
 import { DropdownMenu } from '@/components/header/DropdownMenu'
 
 export function NavBar() {
+  const menuItems = [
+    { href: '#sobre', label: 'Sobre' },
+    { href: '#areas-atuacao', label: 'Áreas de Atuação' },
+    { href: '/blog', label: 'Blog' },
+    { href: '#faq', label: 'FAQ' },
+    { href: '#contato', label: 'Contato' },
+  ]
   return (
     <nav>
       {/* Links visíveis em telas grandes */}
       <div className="hidden sm:flex gap-8">
+        {menuItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="text-[#ffc746] hover:text-[#fef7d5] cursor-pointer"
+          >
+            {item.label}
+          </Link>
+        ))}
         <Link href="https://wa.me/5518991518387" target="_blank" passHref>
           <IoLogoWhatsapp
             size={28}
